@@ -122,6 +122,11 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         return this;
     }
 
+    public ViewHolder setOnClickListener(View view, View.OnClickListener listener) {
+        view.setOnClickListener(listener);
+        return this;
+    }
+
     public ViewHolder setOnTouchListener(int viewId, View.OnTouchListener listener) {
         View view = getView(viewId);
         view.setOnTouchListener(listener);
