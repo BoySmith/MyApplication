@@ -77,7 +77,7 @@ public class LinearRecycleAdapter extends RecyclerView.Adapter<LinearRecycleAdap
         }
     }
 
-
+    //item 点击事件接口，回调到Activity
     public interface OnItemClickListener {
         void onItemClick(View view, int position);
 
@@ -86,6 +86,7 @@ public class LinearRecycleAdapter extends RecyclerView.Adapter<LinearRecycleAdap
 
     private OnItemClickListener mOnItemClickListener;
 
+    //在Activity中调用
     public void setOnItemClickListener(OnItemClickListener listener) {
         this.mOnItemClickListener = listener;
     }
